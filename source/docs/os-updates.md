@@ -11,8 +11,7 @@ available for rollback.
 
 ## Upgrading a Machine with rpm-ostree
 
-Simply invoke `rpm-ostree upgrade`.  It checks the repository URL
-specified in `/ostree/repo/config` to check for an updated version.
+Simply invoke `rpm-ostree upgrade`.  It checks the repository URL specified in a config in `/etc/ostree/remotes.d/` to check for an updated version.
 
 If a new version is found, it will first be downloaded, then deployed.
 At that point, a three-way merge of configuration is performed, using the
